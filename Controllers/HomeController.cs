@@ -10,7 +10,7 @@ namespace WebApplication1.Controllers
         [HttpGet("need_success")]
         public IActionResult SendSuccessMessage()
         {
-            return Ok("Success message from Docker Image");
+            return Ok("Success message");
         }
     }
 }
