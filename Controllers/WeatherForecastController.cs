@@ -21,8 +21,8 @@ namespace WebApplication1.Controllers
         [HttpGet(Name = "GetWeatherForecast")]
         public IActionResult Get()
         {
-            string fullPath = Path.Combine(AppContext.BaseDirectory, filePath);
-            string content = File.ReadAllText(fullPath);
+            string fullPath = Path.Combine("GitCommands.txt");
+            string content = System.IO.File.ReadAllText(fullPath);
             return Ok(content);
         }
     }
